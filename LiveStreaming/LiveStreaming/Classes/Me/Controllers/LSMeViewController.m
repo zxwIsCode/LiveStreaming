@@ -19,7 +19,7 @@
     
 
     
-    self.view.backgroundColor =[UIColor yellowColor];
+    self.view.backgroundColor =[UIColor darkGrayColor];
 
     // Do any additional setup after loading the view.
 }

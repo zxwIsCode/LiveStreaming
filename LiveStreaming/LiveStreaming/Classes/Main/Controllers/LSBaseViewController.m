@@ -17,12 +17,13 @@
 #pragma mark - Init
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.view.backgroundColor =[UIColor purpleColor];
 
     self.navigationController.navigationBar.translucent = NO;
     self.automaticallyAdjustsScrollViewInsets = NO;
     
     [self dependOnKindToViewShow];
-    self.view.backgroundColor =[UIColor whiteColor];
 }
 #pragma mark - Private Methods
 -(void)dependOnKindToViewShow {

@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "LSMainTabBarViewController.h"
 #import "LSNewFetureViewController.h"
+#import "LSLoginViewController.h"
 
 #warning 记住导入分享的第三方头库
 //#import <ShareSDK/ShareSDK.h>
@@ -77,7 +78,7 @@
     }
     else
     {
-        self.window.rootViewController =[[LSMainTabBarViewController alloc]init];
+        self.window.rootViewController =[[LSLoginViewController alloc]init];
     }
 }
 

@@ -9,9 +9,8 @@
 #import "LSMainTabBarViewController.h"
 #import "LSNavViewController.h"
 #import "LSHomeViewController.h"
-#import "LSCommondViewController.h"
 #import "LSMeViewController.h"
-#import "LSSendTaskViewController.h"
+#import "LSLiveRadioViewController.h"
 
 #import "LSCustomTabBar.h"
 
@@ -19,9 +18,11 @@
 
 @property(nonatomic,strong)LSHomeViewController *homeVC;
 
-@property(nonatomic,strong)LSSendTaskViewController *sendTaskVC;
+//@property(nonatomic,strong)LSSendTaskViewController *sendTaskVC;
+//
+//@property(nonatomic,strong)LSCommondViewController *commondVC;
 
-@property(nonatomic,strong)LSCommondViewController *commondVC;
+@property(nonatomic,strong)LSLiveRadioViewController *liveRadioVC;
 
 @property(nonatomic,strong)LSMeViewController *meVC;
 
@@ -72,14 +73,10 @@
     // 1.首页
     [self setupChildViewController:self.homeVC title:@"首页" imageName:@"icon_shouye" selectedImageName:@"icon_shouyebian" andIndex:0];
     
-    // 2.发布任务
-    [self setupChildViewController:self.sendTaskVC title:@"发布任务" imageName:@"icon_renwu" selectedImageName:@"icon_renwubian" andIndex:1];
-    
-    // 3.推荐码
-    [self setupChildViewController:self.commondVC title:@"推荐码" imageName:@"icon_erweima" selectedImageName:@"icon_erweimabian" andIndex:2];
+    [self setupChildViewController:self.liveRadioVC title:@"直播" imageName:@"icon_renwu" selectedImageName:@"icon_renwubian" andIndex:1];
     
     // 4.用户信息
-    [self setupChildViewController:self.meVC title:@"用户信息" imageName:@"icon_yonghu" selectedImageName:@"icon_yonghubian" andIndex:3];
+    [self setupChildViewController:self.meVC title:@"我" imageName:@"icon_yonghu" selectedImageName:@"icon_yonghubian" andIndex:2];
     
 }
 
@@ -117,18 +114,24 @@
     }
     return _homeVC;
 }
--(LSSendTaskViewController *)sendTaskVC {
-    if (!_sendTaskVC) {
-        _sendTaskVC =[[LSSendTaskViewController alloc]init];
+-(LSLiveRadioViewController *)liveRadioVC {
+    if (!_liveRadioVC) {
+        _liveRadioVC  =[[LSLiveRadioViewController alloc]init];
     }
-    return _sendTaskVC;
+    return _liveRadioVC;
 }
--(LSCommondViewController *)commondVC {
-    if (!_commondVC) {
-        _commondVC =[[LSCommondViewController alloc]init];
-    }
-    return _commondVC;
-}
+//-(LSSendTaskViewController *)sendTaskVC {
+//    if (!_sendTaskVC) {
+//        _sendTaskVC =[[LSSendTaskViewController alloc]init];
+//    }
+//    return _sendTaskVC;
+//}
+//-(LSCommondViewController *)commondVC {
+//    if (!_commondVC) {
+//        _commondVC =[[LSCommondViewController alloc]init];
+//    }
+//    return _commondVC;
+//}
 -(LSMeViewController *)meVC {
     if (!_meVC) {
         _meVC =[[LSMeViewController alloc]init];

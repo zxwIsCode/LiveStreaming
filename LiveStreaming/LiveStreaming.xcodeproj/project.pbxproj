@@ -168,8 +168,6 @@
 		05FF0C671E14C0DF006E3FB2 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 05FF0BFD1E14C0DF006E3FB2 /* README.md */; };
 		05FF0C681E14C0DF006E3FB2 /* NSObject+YYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FF0C001E14C0DF006E3FB2 /* NSObject+YYModel.m */; };
 		05FF0C691E14C0DF006E3FB2 /* YYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FF0C021E14C0DF006E3FB2 /* YYClassInfo.m */; };
-		05FF0C8A1E14C10B006E3FB2 /* LSSendTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FF0C6C1E14C10B006E3FB2 /* LSSendTaskViewController.m */; };
-		05FF0C8B1E14C10B006E3FB2 /* LSCommondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FF0C701E14C10B006E3FB2 /* LSCommondViewController.m */; };
 		05FF0C8C1E14C10B006E3FB2 /* LSHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FF0C741E14C10B006E3FB2 /* LSHomeViewController.m */; };
 		05FF0C8D1E14C10B006E3FB2 /* LSBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FF0C781E14C10B006E3FB2 /* LSBaseViewController.m */; };
 		05FF0C8E1E14C10B006E3FB2 /* LSMainTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FF0C7A1E14C10B006E3FB2 /* LSMainTabBarViewController.m */; };
@@ -180,6 +178,7 @@
 		05FF0C931E14C10B006E3FB2 /* LSMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FF0C891E14C10B006E3FB2 /* LSMeViewController.m */; };
 		05FF0C961E14D9F3006E3FB2 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 05FF0C951E14D9F3006E3FB2 /* libsqlite3.tbd */; };
 		05FF0C9E1E14E29B006E3FB2 /* LSLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FF0C9D1E14E29B006E3FB2 /* LSLoginViewController.m */; };
+		05FF0CB91E14ECC4006E3FB2 /* LSLiveRadioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FF0CB81E14ECC4006E3FB2 /* LSLiveRadioViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -504,10 +503,6 @@
 		05FF0C011E14C0DF006E3FB2 /* YYClassInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYClassInfo.h; sourceTree = "<group>"; };
 		05FF0C021E14C0DF006E3FB2 /* YYClassInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYClassInfo.m; sourceTree = "<group>"; };
 		05FF0C031E14C0DF006E3FB2 /* YYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYModel.h; sourceTree = "<group>"; };
-		05FF0C6B1E14C10B006E3FB2 /* LSSendTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LSSendTaskViewController.h; path = Classes/LSSendTaskViewController.h; sourceTree = "<group>"; };
-		05FF0C6C1E14C10B006E3FB2 /* LSSendTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LSSendTaskViewController.m; path = Classes/LSSendTaskViewController.m; sourceTree = "<group>"; };
-		05FF0C6F1E14C10B006E3FB2 /* LSCommondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSCommondViewController.h; sourceTree = "<group>"; };
-		05FF0C701E14C10B006E3FB2 /* LSCommondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSCommondViewController.m; sourceTree = "<group>"; };
 		05FF0C731E14C10B006E3FB2 /* LSHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSHomeViewController.h; sourceTree = "<group>"; };
 		05FF0C741E14C10B006E3FB2 /* LSHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSHomeViewController.m; sourceTree = "<group>"; };
 		05FF0C771E14C10B006E3FB2 /* LSBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSBaseViewController.h; sourceTree = "<group>"; };
@@ -527,6 +522,8 @@
 		05FF0C951E14D9F3006E3FB2 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		05FF0C9C1E14E29B006E3FB2 /* LSLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSLoginViewController.h; sourceTree = "<group>"; };
 		05FF0C9D1E14E29B006E3FB2 /* LSLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSLoginViewController.m; sourceTree = "<group>"; };
+		05FF0CB71E14ECC4006E3FB2 /* LSLiveRadioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSLiveRadioViewController.h; sourceTree = "<group>"; };
+		05FF0CB81E14ECC4006E3FB2 /* LSLiveRadioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSLiveRadioViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -584,8 +581,6 @@
 				05FF0ACF1E14BFE5006E3FB2 /* Utils(View) */,
 				05FF0A7C1E14BFCC006E3FB2 /* General */,
 				05FF0C6A1E14C10B006E3FB2 /* Classes */,
-				05FF0C6B1E14C10B006E3FB2 /* LSSendTaskViewController.h */,
-				05FF0C6C1E14C10B006E3FB2 /* LSSendTaskViewController.m */,
 				05FF0AB01E14BFE5006E3FB2 /* Resource */,
 				05FF0B0F1E14C0DF006E3FB2 /* Vendor */,
 				0538B0EC1E13BECC00D559AB /* Supporting Files */,
@@ -1315,36 +1310,22 @@
 		05FF0C6A1E14C10B006E3FB2 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				05FF0C971E14E201006E3FB2 /* Login&Register */,
-				05FF0C6D1E14C10B006E3FB2 /* CommondCode */,
-				05FF0C711E14C10B006E3FB2 /* Home */,
 				05FF0C751E14C10B006E3FB2 /* Main */,
+				05FF0C971E14E201006E3FB2 /* Login&Register */,
+				05FF0C711E14C10B006E3FB2 /* Home */,
+				05FF0C9F1E14EB4A006E3FB2 /* LiveRadio */,
 				05FF0C861E14C10B006E3FB2 /* Me */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
 		};
-		05FF0C6D1E14C10B006E3FB2 /* CommondCode */ = {
-			isa = PBXGroup;
-			children = (
-				05FF0C6E1E14C10B006E3FB2 /* Controllers */,
-			);
-			path = CommondCode;
-			sourceTree = "<group>";
-		};
-		05FF0C6E1E14C10B006E3FB2 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				05FF0C6F1E14C10B006E3FB2 /* LSCommondViewController.h */,
-				05FF0C701E14C10B006E3FB2 /* LSCommondViewController.m */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
 		05FF0C711E14C10B006E3FB2 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				05FF0CAC1E14EC57006E3FB2 /* Helper */,
 				05FF0C721E14C10B006E3FB2 /* Controllers */,
+				05FF0CAD1E14EC57006E3FB2 /* Models */,
+				05FF0CAE1E14EC57006E3FB2 /* Views */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -1412,7 +1393,10 @@
 		05FF0C861E14C10B006E3FB2 /* Me */ = {
 			isa = PBXGroup;
 			children = (
+				05FF0CA61E14EC0E006E3FB2 /* Helper */,
 				05FF0C871E14C10B006E3FB2 /* Controllers */,
+				05FF0CA71E14EC0E006E3FB2 /* Models */,
+				05FF0CA81E14EC0E006E3FB2 /* Views */,
 			);
 			path = Me;
 			sourceTree = "<group>";
@@ -1469,6 +1453,89 @@
 			sourceTree = "<group>";
 		};
 		05FF0C9B1E14E245006E3FB2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		05FF0C9F1E14EB4A006E3FB2 /* LiveRadio */ = {
+			isa = PBXGroup;
+			children = (
+				05FF0CB41E14EC7E006E3FB2 /* Helper */,
+				05FF0CB31E14EC7E006E3FB2 /* Controllers */,
+				05FF0CB51E14EC7E006E3FB2 /* Models */,
+				05FF0CB61E14EC7E006E3FB2 /* Views */,
+			);
+			path = LiveRadio;
+			sourceTree = "<group>";
+		};
+		05FF0CA61E14EC0E006E3FB2 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		05FF0CA71E14EC0E006E3FB2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		05FF0CA81E14EC0E006E3FB2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		05FF0CAC1E14EC57006E3FB2 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		05FF0CAD1E14EC57006E3FB2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		05FF0CAE1E14EC57006E3FB2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		05FF0CB31E14EC7E006E3FB2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				05FF0CB71E14ECC4006E3FB2 /* LSLiveRadioViewController.h */,
+				05FF0CB81E14ECC4006E3FB2 /* LSLiveRadioViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		05FF0CB41E14EC7E006E3FB2 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		05FF0CB51E14EC7E006E3FB2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		05FF0CB61E14EC7E006E3FB2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -1646,7 +1713,6 @@
 			files = (
 				05FF0C171E14C0DF006E3FB2 /* UIRefreshControl+AFNetworking.m in Sources */,
 				05FF0C9E1E14E29B006E3FB2 /* LSLoginViewController.m in Sources */,
-				05FF0C8B1E14C10B006E3FB2 /* LSCommondViewController.m in Sources */,
 				05FF0C2A1E14C0DF006E3FB2 /* IQUIViewController+Additions.m in Sources */,
 				05FF0B0E1E14BFE5006E3FB2 /* WidgetInitObject.m in Sources */,
 				05FF0C531E14C0DF006E3FB2 /* SDWebImageManager.m in Sources */,
@@ -1667,7 +1733,6 @@
 				05FF0B091E14BFE5006E3FB2 /* THActionSheet.m in Sources */,
 				05FF0C591E14C0DF006E3FB2 /* UIImageView+HighlightedWebCache.m in Sources */,
 				05FF0C501E14C0DF006E3FB2 /* SDWebImageDecoder.m in Sources */,
-				05FF0C8A1E14C10B006E3FB2 /* LSSendTaskViewController.m in Sources */,
 				05FF0C311E14C0DF006E3FB2 /* IQTitleBarButtonItem.m in Sources */,
 				05FF0C221E14C0DF006E3FB2 /* UILabel+Font.m in Sources */,
 				05FF0C291E14C0DF006E3FB2 /* IQUIView+Hierarchy.m in Sources */,
@@ -1696,6 +1761,7 @@
 				05FF0C1C1E14C0DF006E3FB2 /* CoreLabelModel.m in Sources */,
 				05FF0AAC1E14BFCC006E3FB2 /* CMHttpResponseModel.m in Sources */,
 				05FF0AA21E14BFCC006E3FB2 /* AppDelegate.mm in Sources */,
+				05FF0CB91E14ECC4006E3FB2 /* LSLiveRadioViewController.m in Sources */,
 				05FF0AA31E14BFCC006E3FB2 /* LSHDemoDefine.m in Sources */,
 				05FF0C1B1E14C0DF006E3FB2 /* CoreLabel.m in Sources */,
 				05FF0C8F1E14C10B006E3FB2 /* LSNavViewController.m in Sources */,

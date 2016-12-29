@@ -9,7 +9,7 @@
 #import "LSCustomTabBar.h"
 #import "LSTabBarButton.h"
 
-#define buttonCount 4
+#define buttonCount 3
 
 @interface LSCustomTabBar ()
 
