@@ -7,7 +7,7 @@
 //
 
 #import "NHPageContentViewControllerDelegate.h"
-#import "CMBaseViewController.h"
+#import "LSBaseViewController.h"
 
 #import <UIKit/UIKit.h>
 
@@ -21,7 +21,7 @@
 
 @end
 
-@interface NHPageViewController :CMBaseViewController
+@interface NHPageViewController :LSBaseViewController
 
 @property (nonatomic, weak) id<GWPageViewControllerDelegate> delegate;
 @property (nonatomic, assign) CGRect pageContentFrame;

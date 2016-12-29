@@ -7,14 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
-@class CMCustomTabBar;
+@class LSCustomTabBar;
 @protocol CMCustomTabBarDelegate <NSObject>
 
--(void)tabBar:(CMCustomTabBar *)tabBar didSelectVC:(NSInteger)lastIndex andNext:(NSInteger)nextIndex;
+-(void)tabBar:(LSCustomTabBar *)tabBar didSelectVC:(NSInteger)lastIndex andNext:(NSInteger)nextIndex;
 
 @end
 
-@interface CMCustomTabBar : UIImageView
+@interface LSCustomTabBar : UIImageView
 
 @property(nonatomic,weak)id<CMCustomTabBarDelegate> delegate;
 -(void)creatAllTabBarSubViews:(UITabBarItem *)item andIndex:(NSInteger)index;

@@ -6,13 +6,13 @@
 //  Copyright © 2016年 DaviD. All rights reserved.
 //
 
-#import "CMBaseViewController.h"
+#import "LSBaseViewController.h"
 
-@interface CMBaseViewController ()
+@interface LSBaseViewController ()
 
 @end
 
-@implementation CMBaseViewController
+@implementation LSBaseViewController
 
 #pragma mark - Init
 - (void)viewDidLoad {

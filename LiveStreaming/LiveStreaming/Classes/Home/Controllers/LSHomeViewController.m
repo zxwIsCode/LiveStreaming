@@ -6,15 +6,15 @@
 //  Copyright © 2016年 DaviD. All rights reserved.
 //
 
-#import "CMHomeViewController.h"
+#import "LSHomeViewController.h"
 
-@interface CMHomeViewController ()
+@interface LSHomeViewController ()
 
 @property(nonatomic,strong)NSArray *testArray;
 
 @end
 
-@implementation CMHomeViewController
+@implementation LSHomeViewController
 
 - (void)viewDidLoad {
 

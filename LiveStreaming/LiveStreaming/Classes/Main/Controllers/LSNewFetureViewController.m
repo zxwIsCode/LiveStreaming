@@ -6,11 +6,11 @@
 //  Copyright © 2016年 David. All rights reserved.
 //
 
-#import "CMNewFetureViewController.h"
-#import "CMMainTabBarViewController.h"
+#import "LSNewFetureViewController.h"
+#import "LSMainTabBarViewController.h"
 
 #define kNewFetureTotalPage 3
-@interface CMNewFetureViewController ()<UIScrollViewDelegate>
+@interface LSNewFetureViewController ()<UIScrollViewDelegate>
 
 @property(nonatomic,strong)UIScrollView *scrollView;
 
@@ -18,7 +18,7 @@
 
 @end
 
-@implementation CMNewFetureViewController
+@implementation LSNewFetureViewController
 
 #pragma mark - Init
 - (void)viewDidLoad {
@@ -76,7 +76,7 @@
 
 -(void)comeInTabBarMainView:(UIButton *)button {
     
-    self.view.window.rootViewController =[[CMMainTabBarViewController alloc]init];
+    self.view.window.rootViewController =[[LSMainTabBarViewController alloc]init];
 
 }
 

@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CMNewFetureViewController : UIViewController
+@interface LSNewFetureViewController : UIViewController
 
 @end

@@ -1,30 +1,36 @@
 //
-//  CMCommondViewController.m
-//  ComeMoneyHere
+//  LSLoginViewController.m
+//  LiveStreaming
 //
-//  Created by 李保东 on 16/11/15.
-//  Copyright © 2016年 DaviD. All rights reserved.
+//  Created by 李保东 on 16/12/29.
+//  Copyright © 2016年 李保东. All rights reserved.
 //
 
-#import "CMCommondViewController.h"
+#import "LSLoginViewController.h"
 
-@interface CMCommondViewController ()
+@interface LSLoginViewController ()
 
 @end
 
-@implementation CMCommondViewController
+@implementation LSLoginViewController
 
+#pragma mark - Init
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-    self.view.backgroundColor =[UIColor redColor];
     // Do any additional setup after loading the view.
 }
 
-#pragma mark - 子类继承
--(CMNavType)getNavType {
-    return CMNavTypeNone;
-}
+#pragma mark - Private Methods
+
+#pragma mark - Action Methods
+
+#pragma mark - Delegate
+
+#pragma mark - Setter & Getter
+
+
+
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

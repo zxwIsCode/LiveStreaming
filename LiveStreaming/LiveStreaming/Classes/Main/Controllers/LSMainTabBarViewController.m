@@ -6,30 +6,30 @@
 //  Copyright © 2016年 DaviD. All rights reserved.
 //
 
-#import "CMMainTabBarViewController.h"
-#import "CMNavViewController.h"
-#import "CMHomeViewController.h"
-#import "CMCommondViewController.h"
-#import "CMMeViewController.h"
-#import "CMSendTaskViewController.h"
+#import "LSMainTabBarViewController.h"
+#import "LSNavViewController.h"
+#import "LSHomeViewController.h"
+#import "LSCommondViewController.h"
+#import "LSMeViewController.h"
+#import "LSSendTaskViewController.h"
 
-#import "CMCustomTabBar.h"
+#import "LSCustomTabBar.h"
 
-@interface CMMainTabBarViewController ()<CMCustomTabBarDelegate>
+@interface LSMainTabBarViewController ()<CMCustomTabBarDelegate>
 
-@property(nonatomic,strong)CMHomeViewController *homeVC;
+@property(nonatomic,strong)LSHomeViewController *homeVC;
 
-@property(nonatomic,strong)CMSendTaskViewController *sendTaskVC;
+@property(nonatomic,strong)LSSendTaskViewController *sendTaskVC;
 
-@property(nonatomic,strong)CMCommondViewController *commondVC;
+@property(nonatomic,strong)LSCommondViewController *commondVC;
 
-@property(nonatomic,strong)CMMeViewController *meVC;
+@property(nonatomic,strong)LSMeViewController *meVC;
 
-@property(nonatomic,strong)CMCustomTabBar *customTabBar;
+@property(nonatomic,strong)LSCustomTabBar *customTabBar;
 
 @end
 
-@implementation CMMainTabBarViewController
+@implementation LSMainTabBarViewController
 
 #pragma mark - Init
 - (void)viewDidLoad {
@@ -56,7 +56,7 @@
 
 
 -(void)setupCustomTabBar {
-    CMCustomTabBar *customTabBar =[[CMCustomTabBar alloc]init];
+    LSCustomTabBar *customTabBar =[[LSCustomTabBar alloc]init];
     CGFloat tabBarHeight =84 *kAppScale;
     customTabBar.frame =CGRectMake(0, 49.0 -tabBarHeight, SCREEN_WIDTH, tabBarHeight);
     [self.tabBar addSubview:customTabBar];
@@ -96,7 +96,7 @@
     childVc.tabBarItem.selectedImage = [[UIImage imageNamed:selectedImageName] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     
     // 2.包装一个导航控制器
-    CMNavViewController *nav = [[CMNavViewController alloc] initWithRootViewController:childVc];
+    LSNavViewController *nav = [[LSNavViewController alloc] initWithRootViewController:childVc];
     [self addChildViewController:nav];
     
     // 自定义TabBar的SubViews
@@ -106,32 +106,32 @@
 }
 #pragma mark - CMCustomTabBarDelegate
 
--(void)tabBar:(CMCustomTabBar *)tabBar didSelectVC:(NSInteger)lastIndex andNext:(NSInteger)nextIndex {
+-(void)tabBar:(LSCustomTabBar *)tabBar didSelectVC:(NSInteger)lastIndex andNext:(NSInteger)nextIndex {
     self.selectedIndex =nextIndex -kTabBarButtonBaseTag;
 }
 
 #pragma mark - Setter & Getter
--(CMHomeViewController *)homeVC {
+-(LSHomeViewController *)homeVC {
     if (!_homeVC) {
-        _homeVC =[[CMHomeViewController alloc]init];
+        _homeVC =[[LSHomeViewController alloc]init];
     }
     return _homeVC;
 }
--(CMSendTaskViewController *)sendTaskVC {
+-(LSSendTaskViewController *)sendTaskVC {
     if (!_sendTaskVC) {
-        _sendTaskVC =[[CMSendTaskViewController alloc]init];
+        _sendTaskVC =[[LSSendTaskViewController alloc]init];
     }
     return _sendTaskVC;
 }
--(CMCommondViewController *)commondVC {
+-(LSCommondViewController *)commondVC {
     if (!_commondVC) {
-        _commondVC =[[CMCommondViewController alloc]init];
+        _commondVC =[[LSCommondViewController alloc]init];
     }
     return _commondVC;
 }
--(CMMeViewController *)meVC {
+-(LSMeViewController *)meVC {
     if (!_meVC) {
-        _meVC =[[CMMeViewController alloc]init];
+        _meVC =[[LSMeViewController alloc]init];
     }
     return _meVC;
 }

@@ -7,8 +7,8 @@
 //
 
 #import "AppDelegate.h"
-#import "CMMainTabBarViewController.h"
-#import "CMNewFetureViewController.h"
+#import "LSMainTabBarViewController.h"
+#import "LSNewFetureViewController.h"
 
 #warning 记住导入分享的第三方头库
 //#import <ShareSDK/ShareSDK.h>
@@ -70,14 +70,14 @@
     
     if (![lastVersion isEqualToString:currentVersion]) {
         
-        CMNewFetureViewController *newFeture =[[CMNewFetureViewController alloc]init];
+        LSNewFetureViewController *newFeture =[[LSNewFetureViewController alloc]init];
         [self.window setRootViewController:newFeture];
         // 保存新的版本号
         [CMUserDefaults saveLocalString:currentVersion andKey:IsFirstLaunch];
     }
     else
     {
-        self.window.rootViewController =[[CMMainTabBarViewController alloc]init];
+        self.window.rootViewController =[[LSMainTabBarViewController alloc]init];
     }
 }
 

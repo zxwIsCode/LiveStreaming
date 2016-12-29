@@ -1,5 +1,5 @@
 //
-//  CMMainTabBarViewController.h
+//  CMNavViewController.h
 //  ComeMoneyHere
 //
 //  Created by 李保东 on 16/11/15.
@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CMMainTabBarViewController : UITabBarController
+
+@interface LSNavViewController : UINavigationController
+
 
 @end

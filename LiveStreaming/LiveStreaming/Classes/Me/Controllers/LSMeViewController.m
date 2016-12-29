@@ -1,24 +1,32 @@
 //
-//  CMSendTaskViewController.m
+//  CMMeViewController.m
 //  ComeMoneyHere
 //
-//  Created by 李保东 on 16/12/29.
+//  Created by 李保东 on 16/11/15.
 //  Copyright © 2016年 DaviD. All rights reserved.
 //
 
-#import "CMSendTaskViewController.h"
+#import "LSMeViewController.h"
 
-@interface CMSendTaskViewController ()
+@interface LSMeViewController ()
 
 @end
 
-@implementation CMSendTaskViewController
+@implementation LSMeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.view.backgroundColor =[UIColor purpleColor];
+
+    
+    self.view.backgroundColor =[UIColor yellowColor];
+
     // Do any additional setup after loading the view.
+}
+#pragma mark - 子类继承
+
+-(CMNavType)getNavType {
+    return CMNavTypeOnlyTitle;
 }
 
 - (void)didReceiveMemoryWarning {

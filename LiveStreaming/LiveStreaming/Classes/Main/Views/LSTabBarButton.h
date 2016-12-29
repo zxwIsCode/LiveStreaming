@@ -8,7 +8,7 @@
 
 #import "CMUDButton.h"
 
-@interface CMTabBarButton : CMUDButton
+@interface LSTabBarButton : CMUDButton
 @property (nonatomic, strong) UITabBarItem *item;
 
 @end

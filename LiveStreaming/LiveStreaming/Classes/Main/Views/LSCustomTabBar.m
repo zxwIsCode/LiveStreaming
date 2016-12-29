@@ -6,18 +6,18 @@
 //  Copyright © 2016年 DaviD. All rights reserved.
 //
 
-#import "CMCustomTabBar.h"
-#import "CMTabBarButton.h"
+#import "LSCustomTabBar.h"
+#import "LSTabBarButton.h"
 
 #define buttonCount 4
 
-@interface CMCustomTabBar ()
+@interface LSCustomTabBar ()
 
-@property(nonatomic,weak)CMTabBarButton *tempButton;
+@property(nonatomic,weak)LSTabBarButton *tempButton;
 
 @end
 
-@implementation CMCustomTabBar
+@implementation LSCustomTabBar
 
 -(instancetype)init {
     if (self =[super init]) {
@@ -36,7 +36,7 @@
     CGFloat buttonH =self.frame.size.height -buttonY -5 *kAppScale;
     
     CGFloat buttonX =buttonW *index;
-    CMTabBarButton *button =[CMTabBarButton upDownButton];
+    LSTabBarButton *button =[LSTabBarButton upDownButton];
     button.imagRatio =0.6;
     button.frame =CGRectMake(buttonX, buttonY, buttonW, buttonH);
     
@@ -53,7 +53,7 @@
     [self addSubview:button];
 
 }
--(void)TabBarButtonClick:(CMTabBarButton *)tabBarButton {
+-(void)TabBarButtonClick:(LSTabBarButton *)tabBarButton {
     if ([self.delegate respondsToSelector:@selector(tabBar:didSelectVC:andNext:)]) {
         [self.delegate tabBar:self didSelectVC:self.tempButton.tag andNext:tabBarButton.tag];
     }

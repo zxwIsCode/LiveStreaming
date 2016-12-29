@@ -6,8 +6,8 @@
 //  Copyright © 2016年 DaviD. All rights reserved.
 //
 
-#import "CMBaseViewController.h"
+#import "LSBaseViewController.h"
 
-@interface CMHomeViewController : CMBaseViewController
+@interface LSHomeViewController : LSBaseViewController
 
 @end

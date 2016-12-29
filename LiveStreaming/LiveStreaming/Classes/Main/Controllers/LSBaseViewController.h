@@ -15,7 +15,7 @@ typedef NS_ENUM(NSInteger, CMNavType) {
     CMNavTypeNone,        //没有navbar
     CMNavTypeNoLeftItem// 左item没有
 };
-@interface CMBaseViewController : UIViewController
+@interface LSBaseViewController : UIViewController
 {
     NSNotificationCenter *defaultCenter;
 }

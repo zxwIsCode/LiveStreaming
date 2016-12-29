@@ -6,13 +6,13 @@
 //  Copyright © 2016年 DaviD. All rights reserved.
 //
 
-#import "CMNavViewController.h"
+#import "LSNavViewController.h"
 
-@interface CMNavViewController ()
+@interface LSNavViewController ()
 
 @end
 
-@implementation CMNavViewController
+@implementation LSNavViewController
 
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
 {

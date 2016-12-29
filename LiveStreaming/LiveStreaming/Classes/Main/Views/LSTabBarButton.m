@@ -6,9 +6,9 @@
 //  Copyright © 2016年 DaviD. All rights reserved.
 //
 
-#import "CMTabBarButton.h"
+#import "LSTabBarButton.h"
 
-@implementation CMTabBarButton
+@implementation LSTabBarButton
 
 -(void)setItem:(UITabBarItem *)item {
     

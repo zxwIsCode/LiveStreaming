@@ -15,7 +15,7 @@
 		0538B1071E13BECD00D559AB /* LiveStreamingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0538B1061E13BECD00D559AB /* LiveStreamingTests.m */; };
 		0538B1121E13BECD00D559AB /* LiveStreamingUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0538B1111E13BECD00D559AB /* LiveStreamingUITests.m */; };
 		05FF0AA21E14BFCC006E3FB2 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 05FF0A7E1E14BFCC006E3FB2 /* AppDelegate.mm */; };
-		05FF0AA31E14BFCC006E3FB2 /* CMHDemoDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FF0A801E14BFCC006E3FB2 /* CMHDemoDefine.m */; };
+		05FF0AA31E14BFCC006E3FB2 /* LSHDemoDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FF0A801E14BFCC006E3FB2 /* LSHDemoDefine.m */; };
 		05FF0AA41E14BFCC006E3FB2 /* NSDate+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FF0A861E14BFCC006E3FB2 /* NSDate+Addition.m */; };
 		05FF0AA51E14BFCC006E3FB2 /* UIButton+EnlargeEdge.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FF0A881E14BFCC006E3FB2 /* UIButton+EnlargeEdge.m */; };
 		05FF0AA61E14BFCC006E3FB2 /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FF0A8A1E14BFCC006E3FB2 /* UIImage+Color.m */; };
@@ -168,17 +168,18 @@
 		05FF0C671E14C0DF006E3FB2 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 05FF0BFD1E14C0DF006E3FB2 /* README.md */; };
 		05FF0C681E14C0DF006E3FB2 /* NSObject+YYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FF0C001E14C0DF006E3FB2 /* NSObject+YYModel.m */; };
 		05FF0C691E14C0DF006E3FB2 /* YYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FF0C021E14C0DF006E3FB2 /* YYClassInfo.m */; };
-		05FF0C8A1E14C10B006E3FB2 /* CMSendTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FF0C6C1E14C10B006E3FB2 /* CMSendTaskViewController.m */; };
-		05FF0C8B1E14C10B006E3FB2 /* CMCommondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FF0C701E14C10B006E3FB2 /* CMCommondViewController.m */; };
-		05FF0C8C1E14C10B006E3FB2 /* CMHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FF0C741E14C10B006E3FB2 /* CMHomeViewController.m */; };
-		05FF0C8D1E14C10B006E3FB2 /* CMBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FF0C781E14C10B006E3FB2 /* CMBaseViewController.m */; };
-		05FF0C8E1E14C10B006E3FB2 /* CMMainTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FF0C7A1E14C10B006E3FB2 /* CMMainTabBarViewController.m */; };
-		05FF0C8F1E14C10B006E3FB2 /* CMNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FF0C7C1E14C10B006E3FB2 /* CMNavViewController.m */; };
-		05FF0C901E14C10B006E3FB2 /* CMNewFetureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FF0C7E1E14C10B006E3FB2 /* CMNewFetureViewController.m */; };
-		05FF0C911E14C10B006E3FB2 /* CMCustomTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FF0C831E14C10B006E3FB2 /* CMCustomTabBar.m */; };
-		05FF0C921E14C10B006E3FB2 /* CMTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FF0C851E14C10B006E3FB2 /* CMTabBarButton.m */; };
-		05FF0C931E14C10B006E3FB2 /* CMMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FF0C891E14C10B006E3FB2 /* CMMeViewController.m */; };
+		05FF0C8A1E14C10B006E3FB2 /* LSSendTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FF0C6C1E14C10B006E3FB2 /* LSSendTaskViewController.m */; };
+		05FF0C8B1E14C10B006E3FB2 /* LSCommondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FF0C701E14C10B006E3FB2 /* LSCommondViewController.m */; };
+		05FF0C8C1E14C10B006E3FB2 /* LSHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FF0C741E14C10B006E3FB2 /* LSHomeViewController.m */; };
+		05FF0C8D1E14C10B006E3FB2 /* LSBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FF0C781E14C10B006E3FB2 /* LSBaseViewController.m */; };
+		05FF0C8E1E14C10B006E3FB2 /* LSMainTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FF0C7A1E14C10B006E3FB2 /* LSMainTabBarViewController.m */; };
+		05FF0C8F1E14C10B006E3FB2 /* LSNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FF0C7C1E14C10B006E3FB2 /* LSNavViewController.m */; };
+		05FF0C901E14C10B006E3FB2 /* LSNewFetureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FF0C7E1E14C10B006E3FB2 /* LSNewFetureViewController.m */; };
+		05FF0C911E14C10B006E3FB2 /* LSCustomTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FF0C831E14C10B006E3FB2 /* LSCustomTabBar.m */; };
+		05FF0C921E14C10B006E3FB2 /* LSTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FF0C851E14C10B006E3FB2 /* LSTabBarButton.m */; };
+		05FF0C931E14C10B006E3FB2 /* LSMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FF0C891E14C10B006E3FB2 /* LSMeViewController.m */; };
 		05FF0C961E14D9F3006E3FB2 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 05FF0C951E14D9F3006E3FB2 /* libsqlite3.tbd */; };
+		05FF0C9E1E14E29B006E3FB2 /* LSLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FF0C9D1E14E29B006E3FB2 /* LSLoginViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -215,9 +216,9 @@
 		0538B1131E13BECD00D559AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		05FF0A7D1E14BFCC006E3FB2 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		05FF0A7E1E14BFCC006E3FB2 /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
-		05FF0A7F1E14BFCC006E3FB2 /* CMHDemoDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMHDemoDefine.h; sourceTree = "<group>"; };
-		05FF0A801E14BFCC006E3FB2 /* CMHDemoDefine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMHDemoDefine.m; sourceTree = "<group>"; };
-		05FF0A811E14BFCC006E3FB2 /* CMHHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMHHeader.h; sourceTree = "<group>"; };
+		05FF0A7F1E14BFCC006E3FB2 /* LSHDemoDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSHDemoDefine.h; sourceTree = "<group>"; };
+		05FF0A801E14BFCC006E3FB2 /* LSHDemoDefine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSHDemoDefine.m; sourceTree = "<group>"; };
+		05FF0A811E14BFCC006E3FB2 /* LSHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSHeader.h; sourceTree = "<group>"; };
 		05FF0A821E14BFCC006E3FB2 /* LiveStreamingPre.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiveStreamingPre.pch; sourceTree = "<group>"; };
 		05FF0A851E14BFCC006E3FB2 /* NSDate+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Addition.h"; sourceTree = "<group>"; };
 		05FF0A861E14BFCC006E3FB2 /* NSDate+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Addition.m"; sourceTree = "<group>"; };
@@ -503,27 +504,29 @@
 		05FF0C011E14C0DF006E3FB2 /* YYClassInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYClassInfo.h; sourceTree = "<group>"; };
 		05FF0C021E14C0DF006E3FB2 /* YYClassInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYClassInfo.m; sourceTree = "<group>"; };
 		05FF0C031E14C0DF006E3FB2 /* YYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYModel.h; sourceTree = "<group>"; };
-		05FF0C6B1E14C10B006E3FB2 /* CMSendTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMSendTaskViewController.h; sourceTree = "<group>"; };
-		05FF0C6C1E14C10B006E3FB2 /* CMSendTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMSendTaskViewController.m; sourceTree = "<group>"; };
-		05FF0C6F1E14C10B006E3FB2 /* CMCommondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMCommondViewController.h; sourceTree = "<group>"; };
-		05FF0C701E14C10B006E3FB2 /* CMCommondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMCommondViewController.m; sourceTree = "<group>"; };
-		05FF0C731E14C10B006E3FB2 /* CMHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMHomeViewController.h; sourceTree = "<group>"; };
-		05FF0C741E14C10B006E3FB2 /* CMHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMHomeViewController.m; sourceTree = "<group>"; };
-		05FF0C771E14C10B006E3FB2 /* CMBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMBaseViewController.h; sourceTree = "<group>"; };
-		05FF0C781E14C10B006E3FB2 /* CMBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMBaseViewController.m; sourceTree = "<group>"; };
-		05FF0C791E14C10B006E3FB2 /* CMMainTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMMainTabBarViewController.h; sourceTree = "<group>"; };
-		05FF0C7A1E14C10B006E3FB2 /* CMMainTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMMainTabBarViewController.m; sourceTree = "<group>"; };
-		05FF0C7B1E14C10B006E3FB2 /* CMNavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMNavViewController.h; sourceTree = "<group>"; };
-		05FF0C7C1E14C10B006E3FB2 /* CMNavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMNavViewController.m; sourceTree = "<group>"; };
-		05FF0C7D1E14C10B006E3FB2 /* CMNewFetureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMNewFetureViewController.h; sourceTree = "<group>"; };
-		05FF0C7E1E14C10B006E3FB2 /* CMNewFetureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMNewFetureViewController.m; sourceTree = "<group>"; };
-		05FF0C821E14C10B006E3FB2 /* CMCustomTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMCustomTabBar.h; sourceTree = "<group>"; };
-		05FF0C831E14C10B006E3FB2 /* CMCustomTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMCustomTabBar.m; sourceTree = "<group>"; };
-		05FF0C841E14C10B006E3FB2 /* CMTabBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMTabBarButton.h; sourceTree = "<group>"; };
-		05FF0C851E14C10B006E3FB2 /* CMTabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMTabBarButton.m; sourceTree = "<group>"; };
-		05FF0C881E14C10B006E3FB2 /* CMMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMMeViewController.h; sourceTree = "<group>"; };
-		05FF0C891E14C10B006E3FB2 /* CMMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMMeViewController.m; sourceTree = "<group>"; };
+		05FF0C6B1E14C10B006E3FB2 /* LSSendTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LSSendTaskViewController.h; path = Classes/LSSendTaskViewController.h; sourceTree = "<group>"; };
+		05FF0C6C1E14C10B006E3FB2 /* LSSendTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LSSendTaskViewController.m; path = Classes/LSSendTaskViewController.m; sourceTree = "<group>"; };
+		05FF0C6F1E14C10B006E3FB2 /* LSCommondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSCommondViewController.h; sourceTree = "<group>"; };
+		05FF0C701E14C10B006E3FB2 /* LSCommondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSCommondViewController.m; sourceTree = "<group>"; };
+		05FF0C731E14C10B006E3FB2 /* LSHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSHomeViewController.h; sourceTree = "<group>"; };
+		05FF0C741E14C10B006E3FB2 /* LSHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSHomeViewController.m; sourceTree = "<group>"; };
+		05FF0C771E14C10B006E3FB2 /* LSBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSBaseViewController.h; sourceTree = "<group>"; };
+		05FF0C781E14C10B006E3FB2 /* LSBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSBaseViewController.m; sourceTree = "<group>"; };
+		05FF0C791E14C10B006E3FB2 /* LSMainTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSMainTabBarViewController.h; sourceTree = "<group>"; };
+		05FF0C7A1E14C10B006E3FB2 /* LSMainTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSMainTabBarViewController.m; sourceTree = "<group>"; };
+		05FF0C7B1E14C10B006E3FB2 /* LSNavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSNavViewController.h; sourceTree = "<group>"; };
+		05FF0C7C1E14C10B006E3FB2 /* LSNavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSNavViewController.m; sourceTree = "<group>"; };
+		05FF0C7D1E14C10B006E3FB2 /* LSNewFetureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSNewFetureViewController.h; sourceTree = "<group>"; };
+		05FF0C7E1E14C10B006E3FB2 /* LSNewFetureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSNewFetureViewController.m; sourceTree = "<group>"; };
+		05FF0C821E14C10B006E3FB2 /* LSCustomTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSCustomTabBar.h; sourceTree = "<group>"; };
+		05FF0C831E14C10B006E3FB2 /* LSCustomTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSCustomTabBar.m; sourceTree = "<group>"; };
+		05FF0C841E14C10B006E3FB2 /* LSTabBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSTabBarButton.h; sourceTree = "<group>"; };
+		05FF0C851E14C10B006E3FB2 /* LSTabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSTabBarButton.m; sourceTree = "<group>"; };
+		05FF0C881E14C10B006E3FB2 /* LSMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSMeViewController.h; sourceTree = "<group>"; };
+		05FF0C891E14C10B006E3FB2 /* LSMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSMeViewController.m; sourceTree = "<group>"; };
 		05FF0C951E14D9F3006E3FB2 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		05FF0C9C1E14E29B006E3FB2 /* LSLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSLoginViewController.h; sourceTree = "<group>"; };
+		05FF0C9D1E14E29B006E3FB2 /* LSLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSLoginViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -577,11 +580,13 @@
 		0538B0EB1E13BECC00D559AB /* LiveStreaming */ = {
 			isa = PBXGroup;
 			children = (
-				05FF0A831E14BFCC006E3FB2 /* Helper */,
+				05FF0A831E14BFCC006E3FB2 /* Helper(Tools) */,
+				05FF0ACF1E14BFE5006E3FB2 /* Utils(View) */,
 				05FF0A7C1E14BFCC006E3FB2 /* General */,
 				05FF0C6A1E14C10B006E3FB2 /* Classes */,
+				05FF0C6B1E14C10B006E3FB2 /* LSSendTaskViewController.h */,
+				05FF0C6C1E14C10B006E3FB2 /* LSSendTaskViewController.m */,
 				05FF0AB01E14BFE5006E3FB2 /* Resource */,
-				05FF0ACF1E14BFE5006E3FB2 /* Utils */,
 				05FF0B0F1E14C0DF006E3FB2 /* Vendor */,
 				0538B0EC1E13BECC00D559AB /* Supporting Files */,
 			);
@@ -625,15 +630,15 @@
 			children = (
 				05FF0A7D1E14BFCC006E3FB2 /* AppDelegate.h */,
 				05FF0A7E1E14BFCC006E3FB2 /* AppDelegate.mm */,
-				05FF0A7F1E14BFCC006E3FB2 /* CMHDemoDefine.h */,
-				05FF0A801E14BFCC006E3FB2 /* CMHDemoDefine.m */,
-				05FF0A811E14BFCC006E3FB2 /* CMHHeader.h */,
+				05FF0A7F1E14BFCC006E3FB2 /* LSHDemoDefine.h */,
+				05FF0A801E14BFCC006E3FB2 /* LSHDemoDefine.m */,
+				05FF0A811E14BFCC006E3FB2 /* LSHeader.h */,
 				05FF0A821E14BFCC006E3FB2 /* LiveStreamingPre.pch */,
 			);
 			path = General;
 			sourceTree = "<group>";
 		};
-		05FF0A831E14BFCC006E3FB2 /* Helper */ = {
+		05FF0A831E14BFCC006E3FB2 /* Helper(Tools) */ = {
 			isa = PBXGroup;
 			children = (
 				05FF0A841E14BFCC006E3FB2 /* Category */,
@@ -642,6 +647,7 @@
 				05FF0A931E14BFCC006E3FB2 /* NetWorkKit */,
 				05FF0A9E1E14BFCC006E3FB2 /* WechatPay */,
 			);
+			name = "Helper(Tools)";
 			path = Helper;
 			sourceTree = "<group>";
 		};
@@ -749,7 +755,7 @@
 			path = tabbar;
 			sourceTree = "<group>";
 		};
-		05FF0ACF1E14BFE5006E3FB2 /* Utils */ = {
+		05FF0ACF1E14BFE5006E3FB2 /* Utils(View) */ = {
 			isa = PBXGroup;
 			children = (
 				05FF0AD01E14BFE5006E3FB2 /* Factory */,
@@ -758,6 +764,7 @@
 				05FF0AD51E14BFE5006E3FB2 /* NHPageViewController.m */,
 				05FF0AD61E14BFE5006E3FB2 /* PublicView */,
 			);
+			name = "Utils(View)";
 			path = Utils;
 			sourceTree = "<group>";
 		};
@@ -1308,8 +1315,7 @@
 		05FF0C6A1E14C10B006E3FB2 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				05FF0C6B1E14C10B006E3FB2 /* CMSendTaskViewController.h */,
-				05FF0C6C1E14C10B006E3FB2 /* CMSendTaskViewController.m */,
+				05FF0C971E14E201006E3FB2 /* Login&Register */,
 				05FF0C6D1E14C10B006E3FB2 /* CommondCode */,
 				05FF0C711E14C10B006E3FB2 /* Home */,
 				05FF0C751E14C10B006E3FB2 /* Main */,
@@ -1329,8 +1335,8 @@
 		05FF0C6E1E14C10B006E3FB2 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				05FF0C6F1E14C10B006E3FB2 /* CMCommondViewController.h */,
-				05FF0C701E14C10B006E3FB2 /* CMCommondViewController.m */,
+				05FF0C6F1E14C10B006E3FB2 /* LSCommondViewController.h */,
+				05FF0C701E14C10B006E3FB2 /* LSCommondViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -1346,8 +1352,8 @@
 		05FF0C721E14C10B006E3FB2 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				05FF0C731E14C10B006E3FB2 /* CMHomeViewController.h */,
-				05FF0C741E14C10B006E3FB2 /* CMHomeViewController.m */,
+				05FF0C731E14C10B006E3FB2 /* LSHomeViewController.h */,
+				05FF0C741E14C10B006E3FB2 /* LSHomeViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -1366,14 +1372,14 @@
 		05FF0C761E14C10B006E3FB2 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				05FF0C771E14C10B006E3FB2 /* CMBaseViewController.h */,
-				05FF0C781E14C10B006E3FB2 /* CMBaseViewController.m */,
-				05FF0C791E14C10B006E3FB2 /* CMMainTabBarViewController.h */,
-				05FF0C7A1E14C10B006E3FB2 /* CMMainTabBarViewController.m */,
-				05FF0C7B1E14C10B006E3FB2 /* CMNavViewController.h */,
-				05FF0C7C1E14C10B006E3FB2 /* CMNavViewController.m */,
-				05FF0C7D1E14C10B006E3FB2 /* CMNewFetureViewController.h */,
-				05FF0C7E1E14C10B006E3FB2 /* CMNewFetureViewController.m */,
+				05FF0C771E14C10B006E3FB2 /* LSBaseViewController.h */,
+				05FF0C781E14C10B006E3FB2 /* LSBaseViewController.m */,
+				05FF0C791E14C10B006E3FB2 /* LSMainTabBarViewController.h */,
+				05FF0C7A1E14C10B006E3FB2 /* LSMainTabBarViewController.m */,
+				05FF0C7B1E14C10B006E3FB2 /* LSNavViewController.h */,
+				05FF0C7C1E14C10B006E3FB2 /* LSNavViewController.m */,
+				05FF0C7D1E14C10B006E3FB2 /* LSNewFetureViewController.h */,
+				05FF0C7E1E14C10B006E3FB2 /* LSNewFetureViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -1395,10 +1401,10 @@
 		05FF0C811E14C10B006E3FB2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				05FF0C821E14C10B006E3FB2 /* CMCustomTabBar.h */,
-				05FF0C831E14C10B006E3FB2 /* CMCustomTabBar.m */,
-				05FF0C841E14C10B006E3FB2 /* CMTabBarButton.h */,
-				05FF0C851E14C10B006E3FB2 /* CMTabBarButton.m */,
+				05FF0C821E14C10B006E3FB2 /* LSCustomTabBar.h */,
+				05FF0C831E14C10B006E3FB2 /* LSCustomTabBar.m */,
+				05FF0C841E14C10B006E3FB2 /* LSTabBarButton.h */,
+				05FF0C851E14C10B006E3FB2 /* LSTabBarButton.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1414,8 +1420,8 @@
 		05FF0C871E14C10B006E3FB2 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				05FF0C881E14C10B006E3FB2 /* CMMeViewController.h */,
-				05FF0C891E14C10B006E3FB2 /* CMMeViewController.m */,
+				05FF0C881E14C10B006E3FB2 /* LSMeViewController.h */,
+				05FF0C891E14C10B006E3FB2 /* LSMeViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -1426,6 +1432,47 @@
 				05FF0C951E14D9F3006E3FB2 /* libsqlite3.tbd */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		05FF0C971E14E201006E3FB2 /* Login&Register */ = {
+			isa = PBXGroup;
+			children = (
+				05FF0C981E14E245006E3FB2 /* Controllers */,
+				05FF0C991E14E245006E3FB2 /* Helper */,
+				05FF0C9A1E14E245006E3FB2 /* Models */,
+				05FF0C9B1E14E245006E3FB2 /* Views */,
+			);
+			path = "Login&Register";
+			sourceTree = "<group>";
+		};
+		05FF0C981E14E245006E3FB2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				05FF0C9C1E14E29B006E3FB2 /* LSLoginViewController.h */,
+				05FF0C9D1E14E29B006E3FB2 /* LSLoginViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		05FF0C991E14E245006E3FB2 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		05FF0C9A1E14E245006E3FB2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		05FF0C9B1E14E245006E3FB2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1490,6 +1537,7 @@
 		0538B0E11E13BECC00D559AB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = LS;
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "李保东";
 				TargetAttributes = {
@@ -1597,7 +1645,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				05FF0C171E14C0DF006E3FB2 /* UIRefreshControl+AFNetworking.m in Sources */,
-				05FF0C8B1E14C10B006E3FB2 /* CMCommondViewController.m in Sources */,
+				05FF0C9E1E14E29B006E3FB2 /* LSLoginViewController.m in Sources */,
+				05FF0C8B1E14C10B006E3FB2 /* LSCommondViewController.m in Sources */,
 				05FF0C2A1E14C0DF006E3FB2 /* IQUIViewController+Additions.m in Sources */,
 				05FF0B0E1E14BFE5006E3FB2 /* WidgetInitObject.m in Sources */,
 				05FF0C531E14C0DF006E3FB2 /* SDWebImageManager.m in Sources */,
@@ -1618,7 +1667,7 @@
 				05FF0B091E14BFE5006E3FB2 /* THActionSheet.m in Sources */,
 				05FF0C591E14C0DF006E3FB2 /* UIImageView+HighlightedWebCache.m in Sources */,
 				05FF0C501E14C0DF006E3FB2 /* SDWebImageDecoder.m in Sources */,
-				05FF0C8A1E14C10B006E3FB2 /* CMSendTaskViewController.m in Sources */,
+				05FF0C8A1E14C10B006E3FB2 /* LSSendTaskViewController.m in Sources */,
 				05FF0C311E14C0DF006E3FB2 /* IQTitleBarButtonItem.m in Sources */,
 				05FF0C221E14C0DF006E3FB2 /* UILabel+Font.m in Sources */,
 				05FF0C291E14C0DF006E3FB2 /* IQUIView+Hierarchy.m in Sources */,
@@ -1647,29 +1696,29 @@
 				05FF0C1C1E14C0DF006E3FB2 /* CoreLabelModel.m in Sources */,
 				05FF0AAC1E14BFCC006E3FB2 /* CMHttpResponseModel.m in Sources */,
 				05FF0AA21E14BFCC006E3FB2 /* AppDelegate.mm in Sources */,
-				05FF0AA31E14BFCC006E3FB2 /* CMHDemoDefine.m in Sources */,
+				05FF0AA31E14BFCC006E3FB2 /* LSHDemoDefine.m in Sources */,
 				05FF0C1B1E14C0DF006E3FB2 /* CoreLabel.m in Sources */,
-				05FF0C8F1E14C10B006E3FB2 /* CMNavViewController.m in Sources */,
+				05FF0C8F1E14C10B006E3FB2 /* LSNavViewController.m in Sources */,
 				05FF0C5C1E14C0DF006E3FB2 /* NSMutableAttributedString+TY.m in Sources */,
 				05FF0B071E14BFE5006E3FB2 /* DisplayHelper.m in Sources */,
-				05FF0C8E1E14C10B006E3FB2 /* CMMainTabBarViewController.m in Sources */,
+				05FF0C8E1E14C10B006E3FB2 /* LSMainTabBarViewController.m in Sources */,
 				05FF0C5D1E14C0DF006E3FB2 /* TYAttributedLabel.m in Sources */,
 				05FF0C2F1E14C0DF006E3FB2 /* IQBarButtonItem.m in Sources */,
 				05FF0B0D1E14BFE5006E3FB2 /* THTipsView.m in Sources */,
 				05FF0C3C1E14C0DF006E3FB2 /* MJRefreshHeader.m in Sources */,
 				0538B0EE1E13BECC00D559AB /* main.m in Sources */,
 				05FF0C3F1E14C0DF006E3FB2 /* MJRefreshAutoStateFooter.m in Sources */,
-				05FF0C921E14C10B006E3FB2 /* CMTabBarButton.m in Sources */,
+				05FF0C921E14C10B006E3FB2 /* LSTabBarButton.m in Sources */,
 				05FF0C211E14C0DF006E3FB2 /* FMResultSet.m in Sources */,
 				05FF0C5A1E14C0DF006E3FB2 /* UIImageView+WebCache.m in Sources */,
 				05FF0C681E14C0DF006E3FB2 /* NSObject+YYModel.m in Sources */,
-				05FF0C931E14C10B006E3FB2 /* CMMeViewController.m in Sources */,
+				05FF0C931E14C10B006E3FB2 /* LSMeViewController.m in Sources */,
 				05FF0C201E14C0DF006E3FB2 /* FMDatabaseQueue.m in Sources */,
 				05FF0C381E14C0DF006E3FB2 /* MJRefreshAutoFooter.m in Sources */,
 				05FF0B0C1E14BFE5006E3FB2 /* THTextView.m in Sources */,
 				05FF0C671E14C0DF006E3FB2 /* README.md in Sources */,
 				05FF0C1A1E14C0DF006E3FB2 /* GTMBase64.m in Sources */,
-				05FF0C8C1E14C10B006E3FB2 /* CMHomeViewController.m in Sources */,
+				05FF0C8C1E14C10B006E3FB2 /* LSHomeViewController.m in Sources */,
 				05FF0C471E14C0DF006E3FB2 /* MJRefreshConst.m in Sources */,
 				05FF0C4C1E14C0DF006E3FB2 /* MKAnnotationView+WebCache.m in Sources */,
 				05FF0C2D1E14C0DF006E3FB2 /* IQKeyboardReturnKeyHandler.m in Sources */,
@@ -1700,7 +1749,7 @@
 				05FF0C101E14C0DF006E3FB2 /* AFImageDownloader.m in Sources */,
 				05FF0C2C1E14C0DF006E3FB2 /* IQKeyboardManager.m in Sources */,
 				05FF0C331E14C0DF006E3FB2 /* IQUIView+IQKeyboardToolbar.m in Sources */,
-				05FF0C901E14C10B006E3FB2 /* CMNewFetureViewController.m in Sources */,
+				05FF0C901E14C10B006E3FB2 /* LSNewFetureViewController.m in Sources */,
 				05FF0B081E14BFE5006E3FB2 /* GWTextField.m in Sources */,
 				05FF0C5F1E14C0DF006E3FB2 /* TYImageCache.m in Sources */,
 				05FF0C3A1E14C0DF006E3FB2 /* MJRefreshComponent.m in Sources */,
@@ -1711,10 +1760,10 @@
 				05FF0C481E14C0DF006E3FB2 /* UIScrollView+MJExtension.m in Sources */,
 				05FF0AA81E14BFCC006E3FB2 /* UIImageView+CornerRadius.m in Sources */,
 				05FF0C391E14C0DF006E3FB2 /* MJRefreshBackFooter.m in Sources */,
-				05FF0C8D1E14C10B006E3FB2 /* CMBaseViewController.m in Sources */,
+				05FF0C8D1E14C10B006E3FB2 /* LSBaseViewController.m in Sources */,
 				05FF0C431E14C0DF006E3FB2 /* MJRefreshGifHeader.m in Sources */,
 				05FF0B051E14BFE5006E3FB2 /* NHPageViewController.m in Sources */,
-				05FF0C911E14C10B006E3FB2 /* CMCustomTabBar.m in Sources */,
+				05FF0C911E14C10B006E3FB2 /* LSCustomTabBar.m in Sources */,
 				05FF0C541E14C0DF006E3FB2 /* SDWebImagePrefetcher.m in Sources */,
 				05FF0C0A1E14C0DF006E3FB2 /* AFURLRequestSerialization.m in Sources */,
 				05FF0C081E14C0DF006E3FB2 /* AFSecurityPolicy.m in Sources */,

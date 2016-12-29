@@ -26,8 +26,8 @@
 
 #ifdef __OBJC__
 
-#import "CMHHeader.h"
-#import "CMHDemoDefine.h"
+#import "LSHeader.h"
+#import "LSHDemoDefine.h"
 
 #import "UILabel+Font.h"
 #import "UITextField+Font.h"
