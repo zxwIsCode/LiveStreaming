@@ -78,7 +78,12 @@
     }
     else
     {
-        self.window.rootViewController =[[LSLoginViewController alloc]init];
+        if ([LSUserTools getLoginData]) {
+            self.window.rootViewController =[[LSMainTabBarViewController alloc]init];
+
+        }else {
+            self.window.rootViewController =[[LSLoginViewController alloc]init];
+        }
     }
 }
 

@@ -179,6 +179,7 @@
 		05FF0C961E14D9F3006E3FB2 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 05FF0C951E14D9F3006E3FB2 /* libsqlite3.tbd */; };
 		05FF0C9E1E14E29B006E3FB2 /* LSLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FF0C9D1E14E29B006E3FB2 /* LSLoginViewController.m */; };
 		05FF0CB91E14ECC4006E3FB2 /* LSLiveRadioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FF0CB81E14ECC4006E3FB2 /* LSLiveRadioViewController.m */; };
+		05FF0CBC1E14EFA3006E3FB2 /* LSUserTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FF0CBB1E14EFA3006E3FB2 /* LSUserTools.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -524,6 +525,8 @@
 		05FF0C9D1E14E29B006E3FB2 /* LSLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSLoginViewController.m; sourceTree = "<group>"; };
 		05FF0CB71E14ECC4006E3FB2 /* LSLiveRadioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSLiveRadioViewController.h; sourceTree = "<group>"; };
 		05FF0CB81E14ECC4006E3FB2 /* LSLiveRadioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSLiveRadioViewController.m; sourceTree = "<group>"; };
+		05FF0CBA1E14EFA3006E3FB2 /* LSUserTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSUserTools.h; sourceTree = "<group>"; };
+		05FF0CBB1E14EFA3006E3FB2 /* LSUserTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSUserTools.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1441,6 +1444,8 @@
 		05FF0C991E14E245006E3FB2 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				05FF0CBA1E14EFA3006E3FB2 /* LSUserTools.h */,
+				05FF0CBB1E14EFA3006E3FB2 /* LSUserTools.m */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -1756,6 +1761,7 @@
 				05FF0C301E14C0DF006E3FB2 /* IQPreviousNextView.m in Sources */,
 				05FF0C141E14C0DF006E3FB2 /* UIButton+AFNetworking.m in Sources */,
 				05FF0B061E14BFE5006E3FB2 /* CMUDButton.m in Sources */,
+				05FF0CBC1E14EFA3006E3FB2 /* LSUserTools.m in Sources */,
 				05FF0B041E14BFE5006E3FB2 /* CMCustomViewFactory.m in Sources */,
 				05FF0AA61E14BFCC006E3FB2 /* UIImage+Color.m in Sources */,
 				05FF0C1C1E14C0DF006E3FB2 /* CoreLabelModel.m in Sources */,

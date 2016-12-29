@@ -17,3 +17,6 @@ UIKIT_EXTERN NSString *const kTestDonationGetPersonURL;  //查询爱心捐款人
 
 
 #define kTabBarButtonBaseTag 100
+
+// 是否登录的key
+#define kIsLogin  @"kIsLogin"

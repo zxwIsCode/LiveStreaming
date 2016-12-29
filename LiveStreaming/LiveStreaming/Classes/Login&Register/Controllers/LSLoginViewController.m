@@ -45,6 +45,9 @@
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [[DisplayHelper shareDisplayHelper]hideLoading:ws.view];
         [UIApplication sharedApplication].keyWindow.rootViewController =[[LSMainTabBarViewController alloc]init];
+        
+        // 保存登录状态
+        [LSUserTools saveLoginData:YES];
         [DisplayHelper displaySuccessAlert:@"登录成功"];
 
 

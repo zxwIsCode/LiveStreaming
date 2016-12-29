@@ -9,6 +9,9 @@
 #import "LSNewFetureViewController.h"
 #import "LSMainTabBarViewController.h"
 
+#import "LSLoginViewController.h"
+
+
 #define kNewFetureTotalPage 3
 @interface LSNewFetureViewController ()<UIScrollViewDelegate>
 
@@ -76,7 +79,7 @@
 
 -(void)comeInTabBarMainView:(UIButton *)button {
     
-    self.view.window.rootViewController =[[LSMainTabBarViewController alloc]init];
+    self.view.window.rootViewController =[[LSLoginViewController alloc]init];
 
 }
 
