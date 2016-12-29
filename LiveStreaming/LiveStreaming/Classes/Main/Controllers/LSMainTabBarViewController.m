@@ -18,9 +18,6 @@
 
 @property(nonatomic,strong)LSHomeViewController *homeVC;
 
-//@property(nonatomic,strong)LSSendTaskViewController *sendTaskVC;
-//
-//@property(nonatomic,strong)LSCommondViewController *commondVC;
 
 @property(nonatomic,strong)LSLiveRadioViewController *liveRadioVC;
 
@@ -71,12 +68,12 @@
 - (void)setupAllChildViewControllers
 {
     // 1.首页
-    [self setupChildViewController:self.homeVC title:@"首页" imageName:@"icon_shouye" selectedImageName:@"icon_shouyebian" andIndex:0];
+    [self setupChildViewController:self.homeVC title:nil imageName:@"toolbar_home" selectedImageName:@"toolbar_home_sel" andIndex:0];
     
-    [self setupChildViewController:self.liveRadioVC title:@"直播" imageName:@"icon_renwu" selectedImageName:@"icon_renwubian" andIndex:1];
+    [self setupChildViewController:self.liveRadioVC title:nil imageName:@"toolbar_live" selectedImageName:nil andIndex:1];
     
     // 4.用户信息
-    [self setupChildViewController:self.meVC title:@"我" imageName:@"icon_yonghu" selectedImageName:@"icon_yonghubian" andIndex:2];
+    [self setupChildViewController:self.meVC title:nil imageName:@"toolbar_me" selectedImageName:@"toolbar_me_sel" andIndex:2];
     
 }
 
@@ -87,10 +84,16 @@
 - (void)setupChildViewController:(UIViewController *)childVc title:(NSString *)title imageName:(NSString *)imageName selectedImageName:(NSString *)selectedImageName andIndex:(NSInteger)index
 {
     // 1.设置控制器的属性
-    childVc.title = title;
-    childVc.tabBarItem.image = [UIImage imageNamed:imageName];
+    if (title) {
+        childVc.title = title;
+    }
+    if (imageName) {
+        childVc.tabBarItem.image = [UIImage imageNamed:imageName];
 
-    childVc.tabBarItem.selectedImage = [[UIImage imageNamed:selectedImageName] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    }
+    if (selectedImageName) {
+        childVc.tabBarItem.selectedImage = [[UIImage imageNamed:selectedImageName] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    }
     
     // 2.包装一个导航控制器
     LSNavViewController *nav = [[LSNavViewController alloc] initWithRootViewController:childVc];
@@ -120,18 +123,7 @@
     }
     return _liveRadioVC;
 }
-//-(LSSendTaskViewController *)sendTaskVC {
-//    if (!_sendTaskVC) {
-//        _sendTaskVC =[[LSSendTaskViewController alloc]init];
-//    }
-//    return _sendTaskVC;
-//}
-//-(LSCommondViewController *)commondVC {
-//    if (!_commondVC) {
-//        _commondVC =[[LSCommondViewController alloc]init];
-//    }
-//    return _commondVC;
-//}
+
 -(LSMeViewController *)meVC {
     if (!_meVC) {
         _meVC =[[LSMeViewController alloc]init];

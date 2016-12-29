@@ -43,8 +43,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
-    [[UINavigationBar appearance]setBarTintColor:RGBCOLOR(129, 188, 53)];
-    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
+//    [[UINavigationBar appearance]setBarTintColor:RGBCOLOR(129, 188, 53)];
+//    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
+    UINavigationBar *bar = [UINavigationBar appearance];
+    [bar setBackgroundImage:[UIImage imageNamed:@"navBar_bg_414x70"] forBarMetrics:UIBarMetricsDefault];
     
     self.window =[[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     [self initRootViewController];

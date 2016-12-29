@@ -32,12 +32,12 @@
 -(void)creatAllTabBarSubViews:(UITabBarItem *)item andIndex:(NSInteger)index{
     
     CGFloat buttonW =self.frame.size.width/buttonCount;
-    CGFloat buttonY =30 *kAppScale;
+    CGFloat buttonY =44;
     CGFloat buttonH =self.frame.size.height -buttonY -5 *kAppScale;
     
     CGFloat buttonX =buttonW *index;
     LSTabBarButton *button =[LSTabBarButton upDownButton];
-    button.imagRatio =0.6;
+    button.imagRatio =1;
     button.frame =CGRectMake(buttonX, buttonY, buttonW, buttonH);
     
 //    button.backgroundColor =[UIColor redColor];
