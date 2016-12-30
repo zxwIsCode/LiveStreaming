@@ -8,7 +8,7 @@
 
 #import "LSMainTabBarViewController.h"
 #import "LSNavViewController.h"
-#import "LSHomeViewController.h"
+#import "LSHomeContactViewController.h"
 #import "LSMeViewController.h"
 #import "LSLiveRadioViewController.h"
 
@@ -16,7 +16,7 @@
 
 @interface LSMainTabBarViewController ()<CMCustomTabBarDelegate>
 
-@property(nonatomic,strong)LSHomeViewController *homeVC;
+@property(nonatomic,strong)LSHomeContactViewController *homeContactVC;
 
 
 @property(nonatomic,strong)LSLiveRadioViewController *liveRadioVC;
@@ -111,11 +111,11 @@
 }
 
 #pragma mark - Setter & Getter
--(LSHomeViewController *)homeVC {
-    if (!_homeVC) {
-        _homeVC =[[LSHomeViewController alloc]init];
+-(LSHomeContactViewController *)homeVC {
+    if (!_homeContactVC) {
+        _homeContactVC =[[LSHomeContactViewController alloc]init];
     }
-    return _homeVC;
+    return _homeContactVC;
 }
 -(LSLiveRadioViewController *)liveRadioVC {
     if (!_liveRadioVC) {

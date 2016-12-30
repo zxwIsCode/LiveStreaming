@@ -8,6 +8,9 @@
 
 #import "LSBaseViewController.h"
 
-@interface LSHomeViewController : LSBaseViewController
+@interface LSHomeHotViewController : LSBaseViewController
+
+@property (nonatomic,weak) UINavigationController *nav;
+
 
 @end
