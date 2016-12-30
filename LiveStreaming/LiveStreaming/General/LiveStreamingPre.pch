@@ -43,6 +43,7 @@
 
 #import "LSUserTools.h"
 
+#import "UIImageView+WebCache.h"
 
 
 

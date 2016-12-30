@@ -13,3 +13,6 @@ NSString *const kTestQQGetNickNameURL = @"/GetQqNikeName";
 NSString *const kTestDonationGetListURL = @"/GetDonationList";
 NSString *const kTestDonationGetPersonURL = @"/DonationPerson";
 
+NSString *const kHomeGetHotLive = @"Fans/GetHotLive?page=1";  // 首页获得热门直播者接口
+
+

@@ -8,6 +8,8 @@
 
 #import "LSHomeHotViewController.h"
 #import "LSHomeHotCell.h"
+#import "MJRefresh.h"
+#import "LSHomeHotModel.h"
 
 @interface LSHomeHotViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -30,23 +32,78 @@
 
     [super viewDidLoad];
     [self.view addSubview:self.tableView];
-    self.view.backgroundColor =[UIColor blueColor];
+//    self.view.backgroundColor =[UIColor blueColor];
     
+    [self initAllDatas];
+    
+
 }
 
 #pragma mark - Private Methods
+-(void)initAllDatas {
+    CMHttpRequestModel *model =[[CMHttpRequestModel alloc]init];
+    
+    model.appendUrl =kHomeGetHotLive;
+    model.type =CMHttpType_GET;
+    WS(ws);
+    model.callback =^(CMHttpResponseModel *result, NSError *error) {
+        
+        if (result.state ==CMReponseCodeState_Success) {// 成功,做自己的逻辑
+            NSArray *allHotArray =result.data[@"list"];
+            for (NSDictionary *dicItem in allHotArray) {
+                LSHomeHotModel *hotModel = [LSHomeHotModel updateWithDic:dicItem];
+                [ws.hotDataArray addObject:hotModel];
+            }
+            [ws.tableView reloadData];
+            DDLog(@"%@",result.data);
+        }else {// 失败,弹框提示
+            [CMHttpStateTools showHtttpStateView:result.state];
+            
+            DDLog(@"%@",result.error);
+        }
+        
+    };
+    [[CMHTTPSessionManager sharedHttpSessionManager] sendHttpRequestParam:model];
+}
 
 #pragma mark - UITableViewDelegate
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.hotDataArray.count;
+    
+//    return self.hotDataArray.count +1;
+    return self.hotDataArray.count +1;
+}
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (indexPath.row ==0) {
+        return 100;
+    }
+    return (54 +300 +10) *kAppScale;
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
+    if (indexPath.row ==0) {
+        static NSString *ID = @"AdsCellId";
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
+        if (!cell) {
+            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ID];
+            cell.selectedBackgroundView =[[UIView alloc]init];
+            cell.backgroundColor =[UIColor redColor];
+        }
+        return cell;
+
+    }
     LSHomeHotCell *cell =[LSHomeHotCell updateWithTableView:tableView];
     if (cell) {
         
+//        cell.backgroundColor =[UIColor lightGrayColor];
+        cell.hotModel =self.hotDataArray[indexPath.row -1];
     }
-    return cell;    
+    return cell;
+    
+}
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:NO];
+    
+    
 }
 
 -(void)testPersonNet {
@@ -103,6 +160,7 @@
     }
     return _tableView;
 }
+
 
 
 @end

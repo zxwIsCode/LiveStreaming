@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "LSHomeHotModel.h"
 @interface LSHomeHotCell : UITableViewCell
+
+@property(nonatomic,strong)LSHomeHotModel *hotModel;
 
 +(instancetype)updateWithTableView:(UITableView *)tableView;
 @end

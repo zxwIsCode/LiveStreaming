@@ -22,7 +22,7 @@
             _state =CMReponseCodeState_Faild;
             if ([responseData isKindOfClass:[NSDictionary class]]) {
                 NSNumber *code = [responseData objectForKey:@"code"];
-                NSString *errorMsg =[responseData objectForKey:@"message"];
+                NSString *errorMsg =[responseData objectForKey:@"msg"];
                 _error = [NSError errorWithDomain:errorMsg
                                              code:code.integerValue
                                          userInfo:nil];
@@ -31,8 +31,8 @@
         }else {
             if ([responseData isKindOfClass:[NSDictionary class]]) {// 正常返回数据处理
                 NSNumber *codeNum =responseData[@"code"];
-                id data = [responseData valueForKey:@"info"];
-                if ([codeNum intValue] ==200) {
+                id data = [responseData valueForKey:@"data"];
+                if ([codeNum intValue] ==100) {
 //                    _isSucc =YES;
                     _state =CMReponseCodeState_Success;
                     _data =data;
@@ -45,7 +45,7 @@
                     _data =data;
                 }
                 
-                NSString *alertMsg =[responseData objectForKey:@"message"];
+                NSString *alertMsg =[responseData objectForKey:@"msg"];
                 _alertMsg =alertMsg;
 
             }else {// 服务器返回数据问题

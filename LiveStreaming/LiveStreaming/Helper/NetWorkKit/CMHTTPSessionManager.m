@@ -30,7 +30,7 @@ static CMHTTPSessionManager *_httpInstance = nil;
 }
 -(instancetype)init {
     if (self = [super init]) {
-        self.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript",@"text/html",@"text/plain", nil];
+        self.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript",@"text/html",@"text/xml",@"text/plain", nil];
         
         AFJSONResponseSerializer *response = [AFJSONResponseSerializer serializer];
         // 防止返回Null的问题
