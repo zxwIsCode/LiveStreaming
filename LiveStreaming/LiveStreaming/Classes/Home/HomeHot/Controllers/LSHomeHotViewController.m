@@ -10,6 +10,7 @@
 #import "LSHomeHotCell.h"
 #import "MJRefresh.h"
 #import "LSHomeHotModel.h"
+#import "LSHomeHotDetailViewController.h"
 
 @interface LSHomeHotViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -36,7 +37,6 @@
     
     [self initAllDatas];
     
-
 }
 
 #pragma mark - Private Methods
@@ -46,6 +46,7 @@
     model.appendUrl =kHomeGetHotLive;
     model.type =CMHttpType_GET;
     WS(ws);
+    [[DisplayHelper shareDisplayHelper]showLoading:self.view noteText:@"加载中..."];
     model.callback =^(CMHttpResponseModel *result, NSError *error) {
         
         if (result.state ==CMReponseCodeState_Success) {// 成功,做自己的逻辑
@@ -61,6 +62,8 @@
             
             DDLog(@"%@",result.error);
         }
+        [[DisplayHelper shareDisplayHelper]hideLoading:ws.view];
+
         
     };
     [[CMHTTPSessionManager sharedHttpSessionManager] sendHttpRequestParam:model];
@@ -103,7 +106,15 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:NO];
     
-    
+    LSHomeHotDetailViewController *hotDetailVC =[[LSHomeHotDetailViewController alloc]init];
+    hotDetailVC.hotModel =self.hotDataArray[indexPath.row -1];
+    NSInteger nextCount;
+    nextCount =indexPath.row -2;
+    if (nextCount < 0) {
+        nextCount =self.hotDataArray.count -1;
+    }
+    hotDetailVC.nextHotModel =self.hotDataArray[nextCount];
+    [self.navigationController pushViewController:hotDetailVC animated:YES];
 }
 
 -(void)testPersonNet {

@@ -27,7 +27,8 @@ CG_INLINE CGFloat CurrentScreenScale()
 }
 //系统目录
 #define kDocuments  [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject]
-
+#define Color(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+#define KeyColor Color(216, 41, 116)
 
 //----------方法简写-------
 #define mAppDelegate        (AppDelegate *)[[UIApplication sharedApplication] delegate]
@@ -86,6 +87,8 @@ UIKIT_STATIC_INLINE AppDelegate *appDelegate()
 #define RechargeViewHeight  100 *kAppScale
 #define Ten 10 *kAppScale
 #define Num_Zero 0
+#define iPhone6_WIDTH 375.0f
+#define iPhone6_HEIGHT 667.0f
 #define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
 #define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
 #define kAppScale SCREEN_WIDTH/375.0f

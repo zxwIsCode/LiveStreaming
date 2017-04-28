@@ -90,6 +90,8 @@
         
         self.peopleLookLable.font =[UIFont systemFontOfSize:13 *kAppScale];
         
+        self.iconImageView.layer.cornerRadius =iconWH *0.5;
+        self.iconImageView.layer.masksToBounds =YES;
         
         
         //4.添加到父View上
